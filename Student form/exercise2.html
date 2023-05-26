@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise-2-EDP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="exercise2.css">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <section>
+        <!-- ========= Intro start ========= -->
+        <div class="intro" id="intro-1">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="fa fa-home"></a>&nbsp;Home</li>&nbsp;&nbsp;
+                    <li><a href="#" class="fa fa-phone">&nbsp;</a>Contact</li>&nbsp;&nbsp;
+                    <li><a href="#" class="fa fa-cog">&nbsp;</a>Service</li>&nbsp;&nbsp;
+                    <li><a href="#" class="fa fa-user">&nbsp;</a>About</li>
+                </ul>
+            </div>
+            <center>
+                <img src="Icon.png" class="Icon">
+                <p id="welcome">WELCOME STUDENT</p>
+                <div class="clock" id="clock"></div><br><br>
+                <button class="intro-btn1" onclick="document.getElementById('modal').style.display='block'">Open</button>
+            </center>
+        </div>
+        <!-- ========= Intro end ========= -->
+
+        <div class="container" id="modal">
+            <form>
+                <!-- ========= STEP-1 start ========= -->
+                <div class="step step-1 active"><span onclick="document.getElementById('modal').style.display='none'" class="close" title="close Container">&times;</span>
+                    <fieldset class="f-Set">
+                        <legend class="Title">STUDENT LOGIN FORM</legend>
+                    </fieldset>
+                    <p class="img">
+                        <img src="bg.png" width="400px" height="400px">
+                    </p>
+                    <div class="field"><br><br>
+                        <legend>Username:</legend>
+                        <span class="fas fa-user"></span><input type="text" name="" required><br><br>
+                    </div>
+                    <div class="field">
+                        <legend>Email:</legend>
+                        <span class="fas fa-envelope"></span><input type="email" name="" required><br><br>
+                    </div>
+                    <div class="field">
+                        <legend>Password:</legend>
+                        <span class="fas fa-lock"></span><input type="password" name="" required><br><br>
+                    </div>
+                    <div class="field">
+                        <legend>Confirm password:</legend>
+                        <span class="fas fa-lock"></span><input type="password" name="" required><br><br>
+                    </div>
+                    <div class="field">
+                        <button class="next-btn" id="btn1">Log In</button>
+                        <button id="btn2">Sign Up</button><br><br>
+                    </div>
+                    <div class="field">
+                        <h4>Log In Via</h4><br>
+                    </div>          
+                    <div class="social-icons">
+                        <div class="social">
+                            <a href="#" class="facebook"><span id="facebook" class="fa fa-facebook"></span></a>
+                        </div>
+                        <div class="social">
+                            <a href="#" class="google"><span id="google" class="fa fa-google"></span></a>
+                        </div>
+                        <div class="social">
+                            <a href="#" class="instagram"><span id="instagram" class="fa fa-instagram"></span></a>
+                        </div>
+                        <div class="social">
+                            <a href="#" class="twitter"><span id="twitter" class="fa fa-twitter"></span></a>
+                        </div>
+                        <div class="social">
+                            <a href="#" class="linkedin"><span id="linkedin" class="fa fa-linkedin"></span></a>
+                        </div><br>
+                    </div>
+                </div>
+                <!-- ========= STEP-1 end ========= -->
+
+                <!-- ========= STEP-2 start ========= -->
+                <div class="step step-2">
+                    <fieldset class="f-Set">
+                        <legend class="Title"> BSIT REGISTRATION FORM</legend>
+                    </fieldset><br>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="Info">Personal Information</legend>
+                            <label for="picture">Profile Picture:</label>
+                            <input type="file" id="Picture" name="picture" placeholder="Profile Picture" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="studID">ID No.:</label>
+                            <input type="number" id="studID" name="studID" placeholder="School ID" required><br> 
+                            <label for="fName">First Name:</label>
+                            <input type="text" id="fName" name="fName" placeholder="First Name" required>
+                            <label for="mName">Middle Name:</label>
+                            <input type="text" id="mName" name="mName" placeholder="Middle Name" required>
+                            <label for="lName">Last Name:</label>
+                            <input type="text" id="lName" name="lName" placeholder="Last Name" required><br>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" placeholder="Age" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="bday">Birth Date:</label>
+                            <input type="date" id="bday" required>&nbsp;&nbsp;
+                            <label for="color">Favorite Color:</label>&nbsp;
+                            <input type="color" id="color" name="Color" required><br><br>
+                            <label>Gender:</label>
+                            <input type="radio" id="Male" name="gender" required><span id="Male">&nbsp;Male</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Female" name="gender" required><span id="Female">&nbsp;Female</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>Civil Status:</label>
+                            <input type="radio" id="Simgle" name="status" required><span id="Single">&nbsp;Single</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="double" name="status" required><span id="double">&nbsp;In a relationship</span>&nbsp;&nbsp;&nbsp;
+                            <br><br><hr><br>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="Email" placeholder="Email address" required>&nbsp;&nbsp;&nbsp;
+                            <label for="contact">Contact No.:</label>
+                            <input type="tel" id="contact" name="Contact" placeholder="Contact No." required><br>
+                            <label for="address">Current Address:</label>
+                            <input type="text" id="address" name="Address" placeholder="Permanent address" required>&nbsp;&nbsp;&nbsp;
+                            <label for="schoolAdd">School Address:</label>
+                            <input type="text" id="schoolAdd" name="School Address" placeholder="School address" required><br>
+                            <label for="year">Year Level:</label>
+                            <select id="year">
+                                <option>Choose your year:</option>
+                                <option>1st year</option>
+                                <option>2nd year</option>
+                                <option>3rd year</option>
+                                <option>4th year</option>
+                            </select>
+                            <label for="section">Section:</label>
+                            <select id="section">
+                                <option>Choose your section:</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                                <option>E</option>
+                                <option>F</option>
+                                <option>G</option>
+                                <option>H</option>
+                            </select>
+                            <label for="set">Set:</label>
+                            <select id="set">
+                                <option>Choose your set:</option>
+                                <option>A</option>
+                                <option>B</option>
+                            </select><br><br>
+                            <label for="skill">Skills:</label>&nbsp;&nbsp;
+                            <input type="checkbox" id="html" name="Skill" required>
+                            <label for="html">HTML</label>&nbsp;&nbsp;
+                            <input type="checkbox" id="css" name="Skill" required>
+                            <label for="css">CSS</label>&nbsp;&nbsp;
+                            <input type="checkbox" id="js" name="Skill" required>
+                            <label for="js">JS</label>&nbsp;&nbsp;
+                            <label for="range">Mastery:</label>
+                            <input type="range" id="range" name="Mastery" required>&nbsp;&nbsp;<span id="result"></span> <br><br>
+                        </fieldset>
+                    </div><br><br>
+                    <button class="back-btn">Back</button>
+                    <button class="next-btn">Next</button>
+                </div>
+                <!-- ========= STEP-2 end ========= -->
+
+                <!-- ========= STEP-3 start ========= -->
+                <div class="step step-3">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="Info">Father's Information</legend>
+                            <label for="fName">First Name:</label>
+                            <input type="text" id="fName" name="fName" placeholder="First Name" required>
+                            <label for="mName">Middle Name:</label>
+                            <input type="text" id="mName" name="mName" placeholder="Middle Name" required>
+                            <label for="lName">Last Name:</label>
+                            <input type="text" id="lName" name="lName" placeholder="Last Name" required><br>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" placeholder="Age" required>&nbsp;&nbsp;&nbsp;
+                            <label for="bday">Birth Date:</label>
+                            <input type="date" id="bday" required>&nbsp;&nbsp;&nbsp;
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" id="occupation" name="Occupation" placeholder="Occupation" required><br>
+                            <label for="bPlace">Place of Birth:</label>
+                            <input type="text" id="bPlace" name="Place of Birth" required>&nbsp;&nbsp;&nbsp;
+                            <label for="address">Current Address:</label>
+                            <input type="text" id="address" name="Address" placeholder="Place of Birth" required><br>
+                            <label>Gender:</label>
+                            <input type="radio" id="Male" name="gender" required><span id="Male">&nbsp;Male</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Female" name="gender" required><span id="Female">&nbsp;Female</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>Civil Status:</label>
+                            <input type="radio" id="Simgle" name="status" required><span id="Single">&nbsp;Single</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="double" name="status" required><span id="double">&nbsp;Married</span>&nbsp;&nbsp;&nbsp;<br>
+                            <label for="HEA">Highest Educational Attainment:</label>
+                            <select id="HEA">
+                                <option>Choose Educational Attainment:</option>
+                                <option>No schooling</option>
+                                <option>High School Graduate</option>
+                                <option>Some college</option>
+                                <option>Two year college</option>
+                                <option>Bachelors</option>
+                                <option>Graduate/Professional</option>
+                            </select>&nbsp;&nbsp;&nbsp;
+                            <label for="course">Course.:</label>
+                            <input type="text" id="course" name="Contact" placeholder="Course." required><br>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="Email" placeholder="Email address" required>&nbsp;&nbsp;&nbsp;
+                            <label for="contact">Contact No.:</label>
+                            <input type="tel" id="contact" name="Contact" placeholder="Contact No." required><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="Info">Mother's Information</legend>
+                            <label for="fName">First Name:</label>
+                            <input type="text" id="fName" name="fName" placeholder="First Name" required>
+                            <label for="mName">Middle Name:</label>
+                            <input type="text" id="mName" name="mName" placeholder="Middle Name" required>
+                            <label for="lName">Last Name:</label>
+                            <input type="text" id="lName" name="lName" placeholder="Last Name" required><br>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" placeholder="Age" required>&nbsp;&nbsp;&nbsp;
+                            <label for="bday">Birth Date:</label>
+                            <input type="date" id="bday" required>&nbsp;&nbsp;&nbsp;
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" id="occupation" name="Occupation" placeholder="Occupation" required><br>
+                            <label for="bPlace">Place of Birth:</label>
+                            <input type="text" id="bPlace" name="Place of Birth" required>&nbsp;&nbsp;&nbsp;
+                            <label for="address">Current Address:</label>
+                            <input type="text" id="address" name="Address" placeholder="Place of Birth" required><br>
+                            <label>Gender:</label>
+                            <input type="radio" id="Male" name="Gender" required><span id="Male">&nbsp;Male</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Female" name="Gender" required><span id="Female">&nbsp;Female</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>Civil Status:</label>
+                            <input type="radio" id="Simgle" name="Status" required><span id="Single">&nbsp;Single</span>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="double" name="Status" required><span id="double">&nbsp;Married</span>&nbsp;&nbsp;&nbsp;<br>
+                            <label for="HEA">Highest Educational Attainment:</label>
+                            <select id="HEA">
+                                <option>Choose Educational Attainment:</option>
+                                <option>No schooling</option>
+                                <option>High School Graduate</option>
+                                <option>Some college</option>
+                                <option>Two year college</option>
+                                <option>Bachelors</option>
+                                <option>Graduate/Professional</option>
+                            </select>&nbsp;&nbsp;&nbsp;
+                            <label for="course">Course.:</label>
+                            <input type="text" id="course" name="Contact" placeholder="Course." required><br>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="Email" placeholder="Email address" required>&nbsp;&nbsp;&nbsp;
+                            <label for="contact">Contact No.:</label>
+                            <input type="tel" id="contact" name="Contact" placeholder="Contact No." required><br><br>
+                        </fieldset>
+                    </div><br>
+                    <button class="back-btn">Back</button>
+                    <button class="next-btn">Submit</button>
+                </div>
+                <!-- ========= STEP-3 end ========= -->
+
+                <!-- ========= STEP-4 start ========= -->
+                <div class="step step-4">
+                    <br><br><br>
+                    <p class="p1">THANKS FOR VISITING</p><br><br>
+                    <p class="p2">Created by:<br> Leonard C. Echavaria<br>BSIT 3-C</p><br><br><br><br><br>
+                    <button class="back-btn">Back</button>
+                </div>
+                <!-- ========= STEP-4 end ========= -->
+            </form>
+        </div>
+    </section>
+
+    <!-- ========= Javascript link ========= -->
+    <script src="exercise2.js"></script> 
+</body>
+</html>
